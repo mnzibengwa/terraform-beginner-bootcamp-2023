@@ -37,3 +37,28 @@ Use chmod u+x ./bin/install_terraform_cli to grant script necessary permissions 
 Be careful when using Init, workspace will not run init on restart.
 Use before instead 
 https://www.gitpod.io/docs/configure/workspaces/workspace-lifecycle
+
+### Working with Env Vars
+
+### env command 
+
+List all Env Vars using env 
+Filter with grep env | grep AWS
+
+Set options
+export HELLO=world 
+unset HELLO
+
+set while running a bash script 
+
+HELLO='world ./bin
+
+### Printing
+
+echo $HELLO 
+
+### Scoping of Env Vars 
+
+Different bash terminals not aware of env vars from a different terminal 
+To persist, sent env var to your bash profile 
+
